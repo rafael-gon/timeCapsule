@@ -1,0 +1,41 @@
+.background{
+  position: fixed;
+  top: 0;
+
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  align-items: center;
+  
+  overflow: hidden;
+
+  background: #121215;
+
+  z-index: -999;
+}
+.background .regua{
+  position: fixed;
+  left: 0;
+  height: 100vh;
+}
+
+.background .luz{
+  position: fixed;
+  left: -500px;
+
+  animation: pulse 20s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: .5;
+  }
+  50% {
+    opacity: .2;
+  }
+}
+
+
+
