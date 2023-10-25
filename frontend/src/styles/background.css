@@ -10,7 +10,7 @@
   
   overflow: hidden;
 
-  background: #121215;
+  background: var(--background);
 
   z-index: -999;
 }
@@ -27,7 +27,6 @@
   animation: pulse 20s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-
 @keyframes pulse {
   0%, 100% {
     opacity: .5;
@@ -36,6 +35,3 @@
     opacity: .2;
   }
 }
-
-
-

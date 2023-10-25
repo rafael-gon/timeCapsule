@@ -1,0 +1,54 @@
+.update{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 24px;
+  padding: 40px 0;
+}
+.update p{
+  color: var(--accent);
+  font-size: 12px;
+}
+.update form{
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 0 32px;
+}
+
+.update form div{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.update input{
+  height: 26px;
+  background: transparent;
+  border: none; 
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.update textarea{
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  height: 500px;
+  color: var(--text);
+}
+
+
+.update input::placeholder{
+  color: var(--accent);
+}
+
+.update textarea::placeholder{
+  color: var(--accent);
+}

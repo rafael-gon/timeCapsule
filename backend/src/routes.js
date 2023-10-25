@@ -10,6 +10,8 @@ const removeMemories = require('./controllers/deleteMemories')
 // Read
 routes.get('/',showMemories.read)
 
+routes.get('/:id',showMemories.readOne)
+
 // Create
 routes.post('/', addMemories.create)
 

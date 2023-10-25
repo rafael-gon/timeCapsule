@@ -5,4 +5,9 @@ module.exports = {
     const memoriesList = await Memories.find();
     return response.json(memoriesList);
   },
+  async readOne(request, response) {
+    const { id } = request.params;
+    const memories = await Memories.findById(id);
+    return response.json(memories);
+  },
 };
